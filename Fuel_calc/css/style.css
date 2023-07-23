@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  background: rgb(255, 0, 0);
+  background: linear-gradient(142deg, rgb(255, 0, 0) 0%, rgb(39, 174, 96) 0%, rgb(0, 0, 0) 77%);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .main_body {
+  width: 500px;
+  height: 700px;
+  background-color: rgba(39, 174, 96, 0.7);
+  border: 1px solid #196F3D;
+  padding: 30px 20px 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 425px) {
+  .wrapper .main_body {
+    height: 600px;
+    width: 100%;
+  }
+}
+.wrapper .main_body h1 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.wrapper .main_body p {
+  font-size: 15px;
+  text-align: center;
+  color: #D0D3D4;
+  line-height: 24px;
+}
+@media (max-width: 425px) {
+  .wrapper .main_body p {
+    font-size: 15px;
+  }
+}
+.wrapper .main_body .finish {
+  text-align: right;
+}
+.wrapper .main_body span {
+  color: #F4D03F;
+  font-size: 18px;
+}
+@media (max-width: 425px) {
+  .wrapper .main_body span {
+    font-size: 15px;
+  }
+}
+.wrapper .main_body input {
+  width: 120px;
+  height: 50px;
+  font-size: 27px;
+  text-align: center;
+  border: 1px solid #196F3D;
+  border-radius: 20%;
+  caret-color: red;
+}
+@media (max-width: 425px) {
+  .wrapper .main_body input {
+    height: 40px;
+    width: 70px;
+    font-size: 22px;
+  }
+}
+.wrapper .main_body .variables_block {
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 425px) {
+  .wrapper .main_body .variables_block {
+    gap: 10px;
+    width: 100%;
+  }
+}
+.wrapper .main_body .variables_block div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .main_body .variables_block label {
+  font-size: 18px;
+  color: #D0D3D4;
+}
+.wrapper .main_body .img {
+  background-image: url("../img/1.jpg");
+  width: 70%;
+  height: 300px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(240, 243, 244, 0.5));
+          filter: drop-shadow(0px 0px 20px rgba(240, 243, 244, 0.5));
+}
+@media (max-width: 425px) {
+  .wrapper .main_body .img {
+    height: 200px;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
